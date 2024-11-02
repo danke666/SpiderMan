@@ -5,32 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея</title>
     <style>
-        body {
+body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
-        header {
-            background-color: #e23636;
-            color: white;
+        .container {
             padding: 20px;
-            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        nav {
-            background-color: #2b2b2b;
-            padding: 10px;
+        .gallery {
+            display: flex;
+            justify-content: center;
             margin-bottom: 20px;
         }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .powers-list {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .powers-list p {
+            margin-bottom: 15px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e23636;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
         nav a {
-            color: white;
-            text-decoration: none;
             margin: 0 10px;
-            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
         nav a:hover {
-            background-color: #e23636;
-            border-radius: 5px;
+            text-decoration: underline;
         }
         .container {
             max-width: 1000px;
@@ -93,6 +120,14 @@
                 <p>Костюм Железного паука</p>
             </div>
         </div>
+        
+        <h2>Экипировка Человека-паука</h2>
+        <P>Нажмите на ручку и грудь паучка</P>
+        <img src="PhotoOfClothes/classic.png" usemap="#equipment-map" alt="Экипировка Человека-паука" style="width: 600px; height: 400px;">
+        <map name="equipment-map">
+            <area shape="rect" coords="200,50,300,150" href="spider-tracer.html" alt="Паучьи маячки">
+            <area shape="rect" coords="300,100,700,150" href="web-shooter.html" target="_blank" alt="Веб-шутеры">
+        </map>
     </div>
 </body>
 </html>

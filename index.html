@@ -7,40 +7,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
             line-height: 1.6;
-        }
-        header {
-            background-color: #e23636;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #2b2b2b;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 5px 10px;
-        }
-        nav a:hover {
-            background-color: #e23636;
-            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
         .container {
+            padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         .powers-list {
             background-color: #f5f5f5;
-            padding: 5px;
+            padding: 20px;
             border-radius: 10px;
+            margin-top: 20px;
+        }
+        .powers-list p {
+            margin-bottom: 15px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e23636;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -75,11 +92,5 @@
         <p>
             <a href="https://www.marvel.com/characters/spider-man-peter-parker/on-screen/profile" target="_blank">Оф.сайт Marvel о Человеке-пауке</a>.
         </p>
-
-        <h2>Нажми на изображение</h2>
-        <img src="PhotoOfClothes/classic.png" usemap="#image-map" alt="Скин Человек-паука" style="width: 600px; height: 400px;">
-        <map name="image-map">
-            <area shape="default" href="gallery.html" alt="Галерея">
-        </map>
 </body>
 </html>
